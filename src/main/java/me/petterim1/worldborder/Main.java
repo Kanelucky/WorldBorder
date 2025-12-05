@@ -75,7 +75,7 @@ public class Main extends PluginBase implements Listener {
                     p.sendMessage(message);
                     e.setCancelled(true);
                     if (teleportToSpawn) {
-                        p.teleport(p.getSpawn(), PlayerTeleportEvent.TeleportCause.PLUGIN);
+                        p.teleport(p.getLevel().getSpawnLocation(), PlayerTeleportEvent.TeleportCause.PLUGIN);
                     }
                 }
             }
