@@ -1,3 +1,17 @@
 # WorldBorder PNX
 A port of this plugin for the latest pnx.
 There are still some issues when teleport to spawn. So you should set "teleportToSpawn" in config.yml to false until a fix update.
+# config.yml
+```yml
+configVersion: 4
+distance: 10000
+message: "§cYou are going too far away!"
+messageTp: "§cYou cannot teleport outside the world border!"
+messageTpOp: "§6You have passed the world border"
+# There is still some problems when teleport to spawn. So you should set this to false until a fix update.
+teleportToSpawn: false
+checkVehicleMovement: true
+opBypass: true
+worlds:
+  - "world"
+```
